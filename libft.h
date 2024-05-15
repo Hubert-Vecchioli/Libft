@@ -6,7 +6,7 @@
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 01:01:54 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/15 01:42:32 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/15 10:06:25 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_strlen(const char *str);
 void	*ft_memset(void *ptr, int x, size_t n);
+void    *ft_memcpy(void *dest, const void *src, size_t n);
+void    *ft_memmove(void *str1, const void *str2, size_t n);
 void	ft_bzero(void *ptr, size_t n);
 
 #endif
