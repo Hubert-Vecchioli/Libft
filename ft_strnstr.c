@@ -1,20 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 16:19:25 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/16 15:05:06 by hvecchio         ###   ########.fr       */
+/*   Created: 2024/05/16 13:46:57 by hvecchio          #+#    #+#             */
+/*   Updated: 2024/05/16 15:49:49 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	size_t	i;
+	size_t	j;
+
+	to_find_len = ft_strlen(to_find);
+	if (to_find == 0)
+		return ((char *)str);
+	i = 0;
+	while (i < n && str[i])
+	{
+		j = 0;
+		while (str[i + j] == to_find[j] && (i + j) < n)
+		{
+			if (j == to_find_len - 1)
+				return ((char *) &str[i]);
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
 }

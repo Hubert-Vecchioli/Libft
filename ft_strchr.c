@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hvecchio <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 16:27:57 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/15 17:12:02 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/16 15:07:22 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *str, int c)
 {
 	int	i;
 
-	i = ft_strlen(string);
+	i = ft_strlen(str);
 	while (i >= 0)
 	{
 		if (str[i] == (char)c)
