@@ -6,7 +6,7 @@
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 01:01:54 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/15 17:26:27 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/16 07:32:58 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
-int     	ft_strncmp(const char *s1, cont char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strlen(const char *str);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
