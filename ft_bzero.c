@@ -6,7 +6,7 @@
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 01:35:10 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/15 01:42:04 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/17 10:49:38 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_bzero(void *ptr, size_t n)
 		((char *)ptr)[i] = 0;
 		i++;
 	}
-	return (ptr);
 }

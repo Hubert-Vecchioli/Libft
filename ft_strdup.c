@@ -6,7 +6,7 @@
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 15:56:15 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/16 15:59:35 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/19 22:40:20 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *src)
 	char	*copy_str;
 	int		i;
 
-	copy_str = (char *)(malloc(ft_strlen(src) * sizeof(char)));
+	copy_str = (malloc((ft_strlen(src) + 1) * sizeof(char)));
 	if (copy_str == NULL)
 		return (NULL);
 	i = 0;

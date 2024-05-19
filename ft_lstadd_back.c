@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 20:18:14 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/17 10:52:01 by hvecchio         ###   ########.fr       */
+/*   Created: 2024/05/19 04:32:52 by hvecchio          #+#    #+#             */
+/*   Updated: 2024/05/19 13:38:37 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	return (c >= '0' && c <= '9');
+	if (!*lst)
+		*lst = new;
+	else
+		(*ft_lstlast(*lst)).next = new;
 }

@@ -6,7 +6,7 @@
 /*   By: hvecchio <hvecchio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 16:47:13 by hvecchio          #+#    #+#             */
-/*   Updated: 2024/05/16 15:04:20 by hvecchio         ###   ########.fr       */
+/*   Updated: 2024/05/20 01:14:24 by hvecchio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	{
 		i++;
 	}
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	return ((int)((unsigned char)str1[i] - (unsigned char)str2[i]));
 }
